@@ -45,7 +45,7 @@ This simple step will already configure the widget for use.
 
 *Note 3: When using emulators, assure that both wifi and mobile data are disabled to trigger the disconnection.
 
-<img src="./assets/internet_builder_preview.gif">
+<img src="./assets/internet_builder_preview.gif" width="200">
 
 ## Todo
 
