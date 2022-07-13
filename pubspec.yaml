@@ -1,6 +1,6 @@
 name: internet_builder
 description: A package to show an specific widget based into user device internet connection.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Greismorr/internet_builder
 
 environment:
