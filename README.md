@@ -41,7 +41,7 @@ This simple step will already configure the widget for use.
 
 *Note 1: If your entire app has a single widget as a parent (Scaffold or MaterialApp for example), just wrap it in the InternetBuilderWidget and the functionality will be spread to the rest of the app. You can test this behavior to the relevant. the Scaffold in the example code with the InternetBuilderWidget. However, care must be taken not to end up hiding important components, such as the Appbar of a Scaffold.
 
-*Note 2: If you need more control or performance, there is a package code made with dependency injection as Singletons in the project repository, in the modular_internet_builder branch.
+*Note 2: If you need more control or performance, there is a source code of this package made with dependency injection as singletons in the project repository, in the modular_internet_builder branch.
 
 *Note 3: When using emulators, assure that both wifi and mobile data are disabled to trigger the disconnection.
 

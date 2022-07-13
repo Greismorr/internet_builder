@@ -28,7 +28,6 @@ class _InternetFailureWidgetState extends State<InternetBuilderWidget> {
       child: BlocConsumer<InternetBuilderBloc, InternetBuilderState>(
         bloc: internetBuilderBloc..add(const GetConnectionStream()),
         listener: (context, state) {
-          // Prints an error if any
           if (state is CheckConnectionErrorState) {
             if (kDebugMode) {
               print(
@@ -38,7 +37,6 @@ class _InternetFailureWidgetState extends State<InternetBuilderWidget> {
           }
         },
         builder: (context, state) {
-          // Returns the StreamBuilder when the Connection Stream is acquired
           if (state is ConnectionStreamRetrievedState) {
             return StreamBuilder(
               stream: state.connectionStream,

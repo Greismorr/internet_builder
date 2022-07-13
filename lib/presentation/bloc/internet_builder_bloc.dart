@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 import '../../domain/usecases/check_connection_usecase.dart';
@@ -16,7 +17,7 @@ class InternetBuilderBloc
     on<GetConnectionStream>(
       (event, emit) async {
         CheckConnectionUseCase checkConnectionUseCase =
-            CheckConnectionUseCaseImpl();
+            Modular.get<CheckConnectionUseCase>();
 
         var checkConnectionUseCaseResult = await checkConnectionUseCase.call();
 
